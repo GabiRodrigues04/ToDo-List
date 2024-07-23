@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html, input, button, option {
+    background-color: #09090B;
+    color: #f4f4f5;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.02em;
+    line-height: 120%;
+}
+
+input[type="date"], input[type="time"], input[type="text"] {
+    all: unset;
+    flex: 1;
+}
+
+input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    padding: 40px 20px;
+    max-width: 1024px;
+    gap: 32px;
+    margin: auto;
+}
+
+.field {
+    width: 25%;
+
+}
+
+.centered-label {
+    margin-left: 10px;
+}
+
+.field-wrapper {
+    margin-bottom: 14px;
+    margin-top: 15px;    
+    padding: 16px;
+    background-color: #09090B;
+    border: 2px solid #27272A;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+
+}
+
+.full-width-input {
+    width: 100%;
+}
+
+.radio-style {
+    display: flex; 
+    flex-direction: column;
+    gap: 12px;
+    justify-items: center;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+}
+
+.radio-option input {
+    margin-right: 10px; 
+}
+
+.radio-style input[type="radio"] {
+    cursor: pointer;
+}
+
+.button-submit {
+    border: none;
+    padding: 12px 20px;
+    background-color: #f4f4f5;
+    color: #09090B;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+}
+
+.session-message {
+    margin: 12px auto; 
+    text-align: center;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards {
+    margin-top: 20px;
+    display: grid;
+    gap: 8px;
+}
+
+.card-bg {
+    background: #18181B;
+    border-radius: 12px;
+    padding: 20px 22px;
+    position: relative;
+  
+}
+
+.card-content {
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.button-delete {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 24px;
+    position:absolute;
+    right: 20px;
+}
+
+.card-text {
+    padding-top: 10px;
+    display:grid;
+}
+
+.card-text h1 {
+    margin-bottom: 16px;
+}
+
+select {
+    margin-left: 8px;
+    padding: 10px 5px;
+    background-color: #09090B;
+    color: #f4f4f5;
+    border: 2px solid #27272A;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+}
